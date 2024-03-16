@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="791d414b-5bc7-4794-be68-a214288a6fd5" name="Changes" comment="Initial commit. Singleton pattern in Java.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-design-patterns-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatterns/singleton/Singleton-pattern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatterns/singleton/SingletonDoubleCheckedLocking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatterns/singleton/SingletonEager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatterns/singleton/SingletonLazy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/designpatterns/singleton/SingletonLazyHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/canFlyExample/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/canFlyExample/AnimalPlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/canFlyExample/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/canFlyExample/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/canFlyExample/Flys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/DogAppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/Labrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/Poodle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/barkBehavior/BarkBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/barkBehavior/Growl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/barkBehavior/PlayfulBark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/barkBehavior/Yelp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/eatBehavior/CommonDiet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/eatBehavior/EatBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/eatBehavior/ProteinDiet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/moveBehavior/AgressivelyMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/moveBehavior/DefensivelyMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/moveBehavior/MoveBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/designpatterns/strategy/dogExample/moveBehavior/NormallyMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/designpatterns/strategy/Strategy-pattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/designpatterns/strategy/Strategy-pattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +36,34 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;danieltikamori&quot;
+  }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+  ]
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/danieltikamori/lab-design-patterns-java.git&quot;,
+    &quot;accountId&quot;: &quot;f231e37c-e7ac-4b1a-ab31-f33f2ce98396&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2dj6MGxL7RIcz9ItYLwnIrlOUiV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +72,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AnimalPlay.executor": "Run",
+    "Application.DogAppMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -58,9 +88,49 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="designpatterns.strategy.dogExample" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DogAppMain">
+    <configuration name="AnimalPlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.strategy.canFlyExample.AnimalPlay" />
+      <module name="lab-design-patterns-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns.strategy.canFlyExample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DogAppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.strategy.dogExample.DogAppMain" />
+      <module name="lab-design-patterns-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns.strategy.dogExample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DogAppMain" />
+        <item itemvalue="Application.AnimalPlay" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,7 +147,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710509092978</updated>
-      <workItem from="1710509094061" duration="4171000" />
+      <workItem from="1710509094061" duration="4747000" />
+      <workItem from="1710538376352" duration="4502000" />
+      <workItem from="1710557346941" duration="7766000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit. Singleton pattern in Java.">
       <option name="closed" value="true" />
@@ -87,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710513264850</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit. Singleton pattern in Java.">
+      <option name="closed" value="true" />
+      <created>1710513546798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710513546798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
